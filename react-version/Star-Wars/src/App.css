@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+
+  height: 100vh;
+background: linear-gradient(to right, #D9F7FF, #A6E2FF, #71CCEB, #3DA9FC);
+/* From very light cyan to a vibrant blue *//* From soft yellow to a fiery orange-red *//* From very light green to a deep teal */
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.card{
+  width: 700px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 18px;
+  text-align: left;
+  border: 1px solid #0087ef;
+  h1{
+    font-size: 35px;
+    line-height: 20px;
+  }
+  h2{
+    margin-bottom: -6px;
+  }
+  p{
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.btn{
+  width: 100%;
+  background-color:  #3DA9FC;
+    color:  #ffffff;
+  cursor: pointer;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 200ms ease-in;
+  &:hover{
+background: linear-gradient(to right, #D9F7FF, #A6E2FF, #71CCEB, #3DA9FC);
+  color: #252525;
+  }
+}
+.character-image{
+  height: 350px;
+  border-radius: 12px;
+  margin: 20px auto -30px;
+}

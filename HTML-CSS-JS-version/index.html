@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Character Info</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+   <div class="headtitle">
+        <h1>Star Wars Character Info</h1>
+        <p>Click the button below to get a random character's information from the Star Wars universe.</p>
+
+   </div>
+    
+    
+    <img src="images/background.jpg" class="bg-image" id="bg-image" alt="Background">
+    <div class="loader" id="looder"></div>
+
+    <main class="f-rw">
+        <div class="movie-card" id="Hide">
+            <div class="poster">
+                <img src="" class="img" id="img" alt="Character image">
+                <hr class="hr1">
+            </div>
+
+            <div class="details">
+                <h1 id="title"></h1> 
+                <p>Year: <span id="year"></span></p>
+               
+                <p>Released: <span id="released"></span></p>
+                <p>Genre: <span id="genre"></span></p>
+                <p>Language: <span id="language"></span></p>
+                
+                
+                <p>Type: <span id="type"></span></p>
+                
+                <p>Gender: <span id="gender"></span></p>
+                <p>Hair Color: <span id="hairColor"></span></p>
+                <p>Skin Color: <span id="skinColor"></span></p>
+                <p>Eye Color: <span id="eyeColor"></span></p>
+                <p>Height: <span id="height"></span></p>
+                <p>Mass: <span id="mass"></span></p>
+                <p>Homeworld: <span id="homeworld"></span></p>
+                
+                <hr class="hr1">
+            </div>
+        </div>
+    </main> 
+
+    <div class="inpt-card">
+        <button class="btn" type="button" onclick="chooseRandomCharacter()">
+            <!-- <svg viewBox="0 0 24 24" fill="CurrentColor" class="sr-icon" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg> -->Random Character
+        </button>
+    </div>
+
+    <footer class="f-bar">
+        <p>&copy; 2024 Stay Tuned for More Awesome Projects!</p>
+        <div class="link">
+            <a href="https://github.com/meshram-aman" class="link-2" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/aman-meshram/" class="link-1" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                    <path d="M8 11l0 5" />
+                    <path d="M8 8l0 .01" />
+                    <path d="M12 16l0 -5" />
+                    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    & ::selection{
+        background: rgb(255, 75, 75);
+        color: white;
+    }
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.f-rw{
+    display: flex;
+    flex-direction: row;
+    /* background-color: pink; */
+}
+.headtitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    h1{
+        font-size: 50px;
+        font-weight: 600;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 18px;
+        color: #000000;
+        font-weight: 100;
+    }
+    margin-bottom: -20px;
+}
+
+.btn{
+    padding: 12px 20px ;
+    background: red;
+    color: white;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer; 
+    box-shadow: inset 0 -3px 4px -1px rgba(0, 0, 0, 0.2),
+    1px 3px 10px rgba(0, 0, 0, 0.185);
+    transition: 300ms ease;
+    font-size: 18px;
+}
+.btn:hover{
+    background: #3bc2db;
+}
+.btn:focus{
+    background: #3bc2db;
+    outline: none;
+}
+.bg-image{
+    display: grid;
+    place-content: center;
+    /* margin-top: 60px; */
+    width: 550px;
+    background-color: red;
+}
+.movie-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1024px;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    /* border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.152) 0px 50px 100px -20px,
+     rgba(0, 0, 0, 0.188) 0px 30px 60px -30px,
+     rgba(10, 37, 64, 0.244) 0px -2px 6px 0px inset; */
+}
+.poster{
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    position: relative;
+    height: 350px;
+    width: 233.33px;
+    box-shadow: rgba(50, 50, 93, 0.152) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.188) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.244) 0px -2px 6px 0px inset;
+    img 
+    {
+        border-radius: 15px;
+        height: 350px;
+        aspect-ratio:2 / 3;
+    }
+  
+}
+.hr1{
+    height: 3px;
+    width: 30%;
+    background: red;
+    margin: 6px auto 0px;
+    border-radius: 50px;
+    border: none;
+}
+.details{
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px 25px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.152) 0px 50px 100px -20px,
+     rgba(0, 0, 0, 0.188) 0px 30px 60px -30px,
+     rgba(10, 37, 64, 0.244) 0px -2px 6px 0px inset;
+    h1
+    {
+        font-size: 35px;
+        background-image: linear-gradient( #000000, #000000);
+        background-clip: text;
+        color: transparent;
+        font-weight: 600;
+    }
+    p
+    {
+        color: rgba(30, 29, 29, 0.91);
+        font-size: 18px;
+    }
+    span
+    {
+        color: rgb(20, 2, 2);
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+.display-non{
+    display: none;
+} 
+
+.loader {
+    margin: 180px auto;
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 2px;
+    background: 
+      radial-gradient(farthest-side,#ffffff 95%,#0000) 50% 0/10px 10px no-repeat,
+      radial-gradient(farthest-side,#0000 calc(100% - 5px),#ff4516 calc(100% - 4px)) content-box;
+    animation: l6 2s infinite ;
+  }
+  @keyframes l6 {to{transform: rotate(1turn)}}
+
+  .f-bar{
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.152) 0px 50px 100px -20px,
+     rgba(0, 0, 0, 0.188) 0px 30px 60px -30px,
+     rgba(10, 37, 64, 0.244) 0px -2px 6px 0px inset;
+    color: #858585;
+    padding: 16px  20px;
+    font-size: 18px;
+    margin: 0px auto 15px;
+  }
+  
+ .link>a {
+    margin: 0px 12px;
+    text-decoration: none;
+    color: #ababab;
+    background: transparent;
+  }
+  .link-1:hover{
+    color: #0062c0;
+  }
+  .link-2:hover{
+    color: #000;
+  }
+  .link-3:hover{
+    color: #e43704;
+  }

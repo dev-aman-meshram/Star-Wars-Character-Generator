@@ -125,8 +125,8 @@ To run all versions locally:
 
 1. **Clone the repository:**
    ```
-   git clone https://github.com/YourUsername/your-star-wars-generator-repo-name.git
-   cd your-star-wars-generator-repo-name
+   git clone [https://github.com/meshram-aman/star-wars-character-generator].git
+   cd star-wars-character-generato
    ```
 2. Follow the "How to Run" instructions for each version above.
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # star-wars-character-generator
 Star Wars Character Generator in HTML/CSS, jQuery, &amp; React. A comparative project showcasing frontend evolution from static styling to dynamic, component-based UIs. Explore diverse web dev approaches in one repo.
 # ⭐ Star Wars Character Generator: Multi-Technology Showcase
@@ -150,5 +151,3 @@ If you have suggestions or find issues, please open an issue or submit a pull re
 [MIT](LICENSE)
 
 ---
-
-May the Force
